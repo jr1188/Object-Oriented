@@ -1,0 +1,39 @@
+package assignment2;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.*;
+
+
+public class bufferReader {
+
+
+	
+public static void main (String[] args) {
+	 BufferedReader br = null;
+	 FileReader fr = null;
+	 try {
+		 // open file to read
+		 String fileName;
+		 // TODO: use scanner to read and store filename from console in 'fileName'
+		 fr = new FileReader(fileName);
+		 br = new BufferedReader(fr);
+		 String line;
+		 // TODO: replace methodName() with the correct method for reading a line
+		 
+	 while ((line = br.methodName()) != null) {
+	 // print line
+	 }
+	 fr.close();
+	 br.close();
+	 }
+	 catch (Exception e) {
+		 System.out.print(e.getMessage());
+		 }
+	 }
+}
+	 
+
+
+
