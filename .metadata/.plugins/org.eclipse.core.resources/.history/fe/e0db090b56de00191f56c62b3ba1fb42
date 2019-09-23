@@ -38,7 +38,7 @@ public class hashMaps {
 		
 		for (Character key : map.keySet()) {
 			Integer value = map.get(key);
-			System.out.println("Key =" + key +"; value =" + value);
+			System.out.println("Key =" + "; value =" + value);
 		}
 		
 	}

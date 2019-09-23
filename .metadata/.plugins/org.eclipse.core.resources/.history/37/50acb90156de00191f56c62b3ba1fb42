@@ -38,12 +38,12 @@ public class hashMaps {
 		
 		for (Character key : map.keySet()) {
 			Integer value = map.get(key);
-			System.out.println("Key =" + key +"; value =" + value);
+			System.out.println("Key =" + "; value =" + value);
 		}
 		
 	}
 	
-	public static void countCharacters(String str, Map<Character, Integer> map) {
+	public void countCharacters(String str, Map<Character, Integer> map) {
 		// go through each character in a string. If we have not seen a character, added it to the map. If we have, increase the count.
 		for (int i = 0; i < str.length(); i++) {
 			char ch = str.charAt(i);
