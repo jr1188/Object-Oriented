@@ -30,12 +30,6 @@ public class hashMaps {
 				
 			iterating over a map
 				for (DataTypeKey key : map.keySet()) {code}
-				
-			Trades off between Arrays, ArraysList, Maps
-				Adding new elements: --, +, +
-				Searching for elements: -, -, +
-				Understandability: - , - , ++
-				Complexity & Memory: ++, - , +
 		 */
 		
 		Map<Character, Integer> map = new HashMap<>();
