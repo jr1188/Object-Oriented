@@ -1,0 +1,50 @@
+package assignment2;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.Scanner;
+
+public class Arrays {
+	public static void main (String[] args) {
+		BufferedReader br = null;
+		FileReader fr = null;
+		 try {
+			 String fileName;
+			 Scanner sc1 = new Scanner(System.in);		 
+			 fileName = sc1.nextLine();
+			 fr = new FileReader(fileName);
+			 br = new BufferedReader(fr);
+			 String line;
+			 
+		 for (int i = 0; i <= 2; i++) {
+			 	String x = br.readLine();
+				 System.out.println(x);
+		}
+			 fr.close();
+			 br.close();
+			 sc1.close(); 
+		 }
+		// use Scanner to read input file name
+		 // use BufferedReader to read the first two lines of the file
+		 int rows = 0; // TODO (Integer.parseInt("#") might be useful)
+		 int cols = 0; // TODO (Integer.parseInt("#") might be useful)
+		 int[][] matrix = new int[rows][cols];
+		 // read the remaining lines
+		 for (int i = 0; i < rows; i++) {
+			 String line = br.readLine();
+			 // see 'split' method to break line into components by spaces
+			 String[] parts = line.split("TODO");
+			 // iterate through parts and save the information in 'matrix'.
+		 }
+		 // close FileReader and BufferedReader
+		 // print matrix
+		 System.out.println(rows);
+		 System.out.println(cols);
+		 for (int i = 0; i < rows; i++) {
+			 for (int j = 0; j < cols; j++) {
+				 System.out.println(matrix[i][j] + " ");
+			 }
+			 System.out.println();
+		 	}
+		 }
+}

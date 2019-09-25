@@ -1,0 +1,64 @@
+package assignment2;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.Scanner;
+
+public class Arrays {
+	public static void main (String[] args) {
+		BufferedReader br = null;
+		FileReader fr = null;
+		String y = null;
+		String z = null;
+		
+		try {
+			 String fileName;
+			 Scanner sc1 = new Scanner(System.in);		 
+			 fileName = sc1.nextLine();
+			 fr = new FileReader(fileName);
+			 br = new BufferedReader(fr);
+			 
+		 y = br.readLine();
+		 z = br.readLine();
+			
+			 fr.close();
+			 br.close();
+			 sc1.close(); 
+		 
+		 } catch (Exception e) {
+			 System.out.print(e.getMessage());
+		 }
+		 int rows = Integer.parseInt(y); // TODO (Integer.parseInt("#") might be useful)
+		 int cols = Integer.parseInt(z); // TODO (Integer.parseInt("#") might be useful)
+		
+		 System.out.print(rows + cols);
+		 
+		
+		/* 
+		 *  int[][] matrix = new int[rows][cols];
+		 // read the remaining lines
+		 for (int i = 0; i < rows; i++) {
+			 String line = br.readLine();
+			 // see 'split' method to break line into components by spaces
+			 String[] parts = line.split("TODO");
+			 // iterate through parts and save the information in 'matrix'.
+		 }
+		 // close FileReader and BufferedReader
+		 // print matrix
+		 System.out.println(rows);
+		 System.out.println(cols);
+		 for (int i = 0; i < rows; i++) {
+			 for (int j = 0; j < cols; j++) {
+				 System.out.println(matrix[i][j] + " ");
+			 }
+			 System.out.println();
+		 	}
+		 */
+		 
+		 
+		
+		 }
+		  
+		 		 
+		
+}
