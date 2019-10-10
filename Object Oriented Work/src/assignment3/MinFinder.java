@@ -21,7 +21,7 @@ public class MinFinder {
 
 		String line;
 		
-		System.out.println("Searching...");
+		System.out.println("Looking for Minimum...");
 		
 		ArrayList<Integer> values = new ArrayList<>();
 
